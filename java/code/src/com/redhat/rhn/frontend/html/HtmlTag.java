@@ -40,9 +40,10 @@ public class HtmlTag extends BaseTag {
     }
 
     /**
+     * For more information, see
+     * http://www.w3.org/TR/html-markup/syntax.html#syntax-elements
      * @return Whether the tag name belongs to the list of HTML5
-     * void elements.
-     * @see http://www.w3.org/TR/html-markup/syntax.html#syntax-elements
+     * void elements. 
      */
     protected boolean isVoidElement() {
         return VOID_ELEMENTS.contains(getTag());

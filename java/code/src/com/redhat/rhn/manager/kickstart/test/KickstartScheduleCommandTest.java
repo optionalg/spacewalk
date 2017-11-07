@@ -303,11 +303,8 @@ public class KickstartScheduleCommandTest extends BaseKickstartCommandTestCase {
 
     /**
      * Util method to schedule a Kickstart.
-     * @param activationType KickstartScheduleCommand.ACTIVATION_TYPE_KEY/EXISTING
-     * @param user who schedules
      * @param server to schedule against
      * @param ksdata to use
-     * @param profileType KickstartScheduleCommand.TARGET_PROFILE_TYPE_*
      * @return KickstartScheduleCommand used
      * @throws Exception
      */

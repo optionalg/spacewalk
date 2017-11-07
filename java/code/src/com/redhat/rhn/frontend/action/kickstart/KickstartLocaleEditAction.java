@@ -28,7 +28,8 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * Handles display and update of Kickstart -> System Details -> Locale
+ * Handles display and update of 
+ * {@literal Kickstart -> System Details -> Locale}
  *
  * @version $Rev$
  */

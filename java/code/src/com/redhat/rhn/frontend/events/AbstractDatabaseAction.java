@@ -64,7 +64,7 @@ public abstract class AbstractDatabaseAction implements MessageAction {
 
     /**
      * Commits the current thread transaction, as well as close the Hibernate session.
-     * <p/>
+     * <p>
      * Note that this call <em>MUST</em> take place for any database operations done in
      * a message queue action for the transaction to be committed.
      */

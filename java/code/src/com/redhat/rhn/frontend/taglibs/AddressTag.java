@@ -31,8 +31,8 @@ import org.apache.commons.lang.StringUtils;
  * <pre>
  *     &lt;rhn:address type=MAILING&gt;
  * </pre>
- * This outputs a table row tag containing a Header column, address info
- * and a link to edit the address.<br />
+ * <p>This outputs a table row tag containing a Header column, address info
+ * and a link to edit the address.</p>
  * <pre>
  *      Mailing:   444 Castro
  *                 Mountain View, CA 94043

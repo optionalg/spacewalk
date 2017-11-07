@@ -58,9 +58,11 @@ public class RequireTag extends TagSupport {
     /**
      * Returns the value of the acl attribute passed into the tag.
      * <pre>
+     * {@literal
      * <rhn:require acl="value">
      *     <h2>Hello World</h2>
      * </rhn:require>
+     * }
      * </pre>
      * @return The value of the acl attribute.
      */

@@ -45,7 +45,7 @@ public class LabelTest extends TestCase {
     }
 
     /**
-     * @param arg0
+     * @param name
      */
     public LabelTest(String name) {
         super(name);

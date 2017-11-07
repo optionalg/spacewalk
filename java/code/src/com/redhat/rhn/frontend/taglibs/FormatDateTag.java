@@ -36,7 +36,8 @@ import javax.xml.bind.DatatypeConverter;
  * Displays a value in a human format (eg. 3 minutes ago)
  * <pre>
  *     &lt;rhn:human-value value="${bean.value}"&gt;
- * </pre> Outputs a human readable text for the value relative to now.<br />
+ * </pre>
+ * <p>Outputs a human readable text for the value relative to now.</p>
  *
  */
 public class FormatDateTag extends TagSupport {
@@ -114,71 +115,66 @@ public class FormatDateTag extends TagSupport {
     }
 
     /**
+     * For details, refer to the {@literal <fmt:FormatDate>} tag
      * @return The current pattern for the formatter
-     * @see fmt:FormatDate tag
      */
     public String getPattern() {
         return pattern;
     }
 
     /**
+     * For details, refer to the {@literal <fmt:FormatDate>} tag
      * @param pat The desired pattern for the formatter
-     * @see fmt:FormatDate tag
      */
     public void setPattern(String pat) {
         this.pattern = pat;
     }
 
     /**
+     * For details, refer to the {@literal <fmt:FormatDate>} tag
      * @return The date style for the formatter
-     * @see fmt:FormatDate tag
      */
     public String getDateStyle() {
         return dateStyle;
     }
 
     /**
+     * For details, refer to the {@literal <fmt:FormatDate>} tag
      * @param style Desired date style for the formatter
-     *
-     * Valid values: default, shot, medium, long, full
-     *
-     * @see fmt:FormatDate tag
+     * (Valid values: default, shot, medium, long, full)
      */
     public void setDateStyle(String style) {
         this.dateStyle = style;
     }
 
     /**
+     * For details, refer to the {@literal <fmt:FormatDate>} tag
      * @return The time style for the formatter
-     * @see fmt:FormatDate
      */
     public String getTimeStyle() {
         return timeStyle;
     }
 
     /**
+     * For details, refer to the {@literal <fmt:FormatDate>} tag
      * @param style Desired time style for the formatter
-     * @see fmt:FormatDate
      */
     public void setTimeStyle(String style) {
         this.timeStyle = style;
     }
 
     /**
+     * For details, refer to the {@literal <fmt:FormatDate>} tag
      * @return Type of the formatter (display date, time or both)
-     *
-     * @see fmt:FormatDate
      */
     public String getType() {
         return type;
     }
 
     /**
+     * For details, refer to the {@literal <fmt:FormatDate>} tag
      * @param typ Desired type for the formatter
-     *
-     * Valid values: date, time or both
-     *
-     * @see fmt:FormatDate
+     * (Valid values: date, time or both)
      */
     public void setType(String typ) {
         this.type = typ;

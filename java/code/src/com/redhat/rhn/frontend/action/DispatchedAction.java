@@ -25,7 +25,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Abstract POST action class that provides for setup->confirm->commit
+ * Abstract POST action class that provides for 
+ * {@literal setup->confirm->commit}
  * lifecycle.  This should probably be added as a <i>real</i> class and
  * promoted for general use as I suspect that many other pages using the rhn
  * list tag need to work the same way.

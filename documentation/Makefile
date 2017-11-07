@@ -21,6 +21,8 @@ JAVA_DOC_SRC_VERSION := 8
 JAVA_DOC_SRC_PATH := ../java/code/src/
 JAVA_DOC_SUBPKGS := "com"
 JAVA_DOC_DIR := javadoc
+JAVA_DOC_CLASSPATH := "../java/lib/*:../java/build/build-lib/*"
+
 
 # Schema Docs
 # Created with DB Schema (http://oraschemadoc.sourceforge.net/)
@@ -42,7 +44,7 @@ python:
 	$(EPYDOC_BIN) $(EPYDOC_SWITCHES) -o $(PYTHON_DOC_DIR) --config $(BUILD_DIR)/epydoc.lst
 
 java:
-	$(JAVA_DOC_BIN) -source $(JAVA_DOC_SRC_VERSION) -d $(JAVA_DOC_DIR) -sourcepath $(JAVA_DOC_SRC_PATH) -subpackages $(JAVA_DOC_SUBPKGS) -J-Xmx512m >/dev/null
+	$(JAVA_DOC_BIN) -source $(JAVA_DOC_SRC_VERSION) -d $(JAVA_DOC_DIR) -sourcepath $(JAVA_DOC_SRC_PATH) -subpackages $(JAVA_DOC_SUBPKGS) -classpath $(JAVA_DOC_CLASSPATH) -J-Xmx512m >/dev/null
 
 schema:
 	$(ORASCHEMADOC) --dia schema.dia --syntax --pb $(DSN) \

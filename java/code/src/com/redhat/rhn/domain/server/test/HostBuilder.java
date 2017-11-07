@@ -47,9 +47,7 @@ public class HostBuilder {
      * This is the final step in building or compiling a host. The host and its guests (if
      * there are any) will be persisted, flushed, and evicted from the current hibernate
      * session.
-     *
-     * <br/><br/>
-     *
+     * <p>
      * The builder does not maintain a reference to a host once it is built; so, calling
      * <code>build</code> successive times will simply return <code>null</code>. One of the
      * <i>create</i> methods must be called before every invocation of this method.

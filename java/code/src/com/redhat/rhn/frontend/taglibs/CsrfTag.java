@@ -23,8 +23,9 @@ import javax.servlet.jsp.JspException;
 import org.apache.struts.taglib.html.HiddenTag;
 
 /**
- * HiddenTag
- * Renders < />
+ * <p>HiddenTag</p>
+ * <p>Renders {@literal < />}</p>
+ * 
  * @version $Rev$
  */
 public class CsrfTag extends HiddenTag {
